@@ -2,6 +2,8 @@ from numbers import Real
 from typing import Dict
 
 from models.ingredient import Ingredient
+# from ingredient import Ingredient
+
 
 Recipe = Dict[Ingredient, int]
 
