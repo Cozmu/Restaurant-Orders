@@ -1,6 +1,8 @@
 from src.models.dish import Dish  # noqa: F401, E261, E501
 from src.models.ingredient import Ingredient, Restriction
-import pytest # mudar interpretador > python CTRL + SHIFT + P > python: select interpreter
+import pytest
+# mudar interpretador > python CTRL + SHIFT + P > python: select interpreter
+
 
 def test_dish():
     with pytest.raises(TypeError):
@@ -21,7 +23,9 @@ def test_dish():
 
     instance_ingredient_x.add_ingredient_dependency(Ingredient('salmão'), 2.5)
 
-    assert instance_ingredient_x.get_restrictions() == {Restriction.ANIMAL_MEAT, Restriction.SEAFOOD, Restriction.ANIMAL_DERIVED}
+    assert instance_ingredient_x.get_restrictions() == {
+        Restriction.ANIMAL_MEAT,
+        Restriction.SEAFOOD,
+        Restriction.ANIMAL_DERIVED
+    }
     assert instance_ingredient_x.get_ingredients() == {Ingredient('salmão')}
-
-

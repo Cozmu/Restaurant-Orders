@@ -8,7 +8,7 @@ def create_menu(path):
     result = set()
     dishes_dict = {}
 
-    with open(path, encoding = "utf-8") as file:
+    with open(path, encoding="utf-8") as file:
         for line in csv.DictReader(file):
             dish, price, ingredient, recipe_amount = line.values()
             if dish in result:

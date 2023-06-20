@@ -1,5 +1,6 @@
 from src.models.ingredient import Ingredient, Restriction  # noqa: F401, E261, E501
 
+
 def test_ingredient():
     instance_ingredient_x = Ingredient('farinha')
 

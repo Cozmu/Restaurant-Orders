@@ -35,7 +35,7 @@ class MenuBuilder:
                     "ingredients": dish.recipe,
                     "price": dish.price,
                     "restrictions": restrictions_available
-                } 
+                }
                 result.append(new_dish)
 
         return result
